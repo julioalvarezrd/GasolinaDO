@@ -9,9 +9,9 @@
     "lang": "es",
     "icons": [
       {
-        "src": "https://julioalvarezrd.github.io/gasolinado/img/logo.svg",
+        "src": "https://julioalvarezrd.github.io/gasolinado/img/logo.png",
         "sizes": "192x192",
-        "type": "image/svg+xml"
+        "type": "image/png"
       }
     ]
   }
