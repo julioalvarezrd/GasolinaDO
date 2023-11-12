@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://julioalvarezrd.github.io/gasolinado/sitemap.xml

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <meta name="description" content="Precios de los combustibles en Republica Dominicana">
+
+    <meta name="keywords"
+        content="cálculo de nómina, Calculo de deducciones, salario en República Dominicana, Calculadora de Impuestos, calculadora salarial, NominaRD, impuesto sobre la renta en RD, Seguro Nacional de Salud en RD, pensiones en República Dominicana, deducciones salariales en RD, salario bruto y neto en RD, sueldo mínimo en República Dominicana">
+
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <meta property="og:title" content="NominaRD - Calculadora de Salario">
+    <meta property="og:description" content="Precios de los combustibles en Republica Dominicana">
+    <meta property="og:image" content="https://julioalvarezrd.github.io/nominard/img/logo.svg">
+    <meta property="og:url" content="https://julioalvarezrd.github.io/nominard">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NominaRD - Calculadora de Salario">
+    <meta name="twitter:description" content="Precios de los combustibles en Republica Dominicana">
+    <meta name="twitter:image" content="https://julioalvarezrd.github.io/nominard/img/logo.svg">
+
+    <link rel="manifest" href="/nominard/manifest.json">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/nominard/service-worker.js')
+                .then(function (registration) {
+                    console.log('Service Worker registrado con éxito:', registration);
+                })
+                .catch(function (error) {
+                    console.error('Error al registrar el Service Worker:', error);
+                });
+        }
+    </script>
+
+
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>GasolinaDO - Precios de Combustibles</title>
+
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand imglogo" href="/nominard">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="62.5" viewBox="0 0 61 62.5">
+                    <g transform="translate(-898 -502)">
+                        <g transform="translate(898 501.169)">
+                            <path
+                                d="M9,.831H35a6.007,6.007,0,0,1,6,6V62.09H3V6.831A6.007,6.007,0,0,1,9,.831ZM37,58.09V6.831a2,2,0,0,0-2-2H9a2,2,0,0,0-2,2V58.09Z"
+                                fill="#127ac1"></path>
+                            <path d="M20,2H0A2,2,0,0,1-2,0,2,2,0,0,1,0-2H20a2,2,0,0,1,2,2A2,2,0,0,1,20,2Z"
+                                transform="translate(12 30)" fill="#127ac1"></path>
+                            <path d="M57,2H0A2,2,0,0,1-2,0,2,2,0,0,1,0-2H57a2,2,0,0,1,2,2A2,2,0,0,1,57,2Z"
+                                transform="translate(2 61.331)" fill="#127ac1"></path>
+                            <path
+                                d="M54,54.527H50.207a6.007,6.007,0,0,1-6-6v-15.1a1.605,1.605,0,0,0-1.6-1.6,5.61,5.61,0,0,1-5.6-5.6V21.31a2,2,0,1,1,4,0v4.91a1.605,1.605,0,0,0,1.6,1.6,5.61,5.61,0,0,1,5.6,5.6v15.1a2,2,0,0,0,2,2H54a2,2,0,0,0,2-2V8.992a2,2,0,0,0-2-2H46.862a2,2,0,1,1,0-4H54a6.007,6.007,0,0,1,6,6V48.527A6.007,6.007,0,0,1,54,54.527Z"
+                                fill="#127ac1"></path>
+                            <path
+                                d="M58,34a2,2,0,0,1-2-2V26.5a.813.813,0,0,0-.812-.812,4.818,4.818,0,0,1-4.812-4.812V7.992a1,1,0,0,0-1-1H48a2,2,0,0,1,0-4h1.375a5.006,5.006,0,0,1,5,5V20.878a.813.813,0,0,0,.813.813A4.818,4.818,0,0,1,60,26.5V32A2,2,0,0,1,58,34Z"
+                                fill="#127ac1"></path>
+                        </g>
+                    </g>
+                </svg>
+
+                CombustiblesDO
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="text-center mt-4">
+            <div class="alert alert-info text-center" style="display:none" id="installButton" role="alert">
+                <div id="installButton">
+                    <p>¡Haz clic aquí para instalar nuestra aplicación!</p>
+                    <button class="btn btn-secondary btn-sm" id="installButton">Instalar</button>
+                </div>
+            </div>
+
+            <div class="row justify-content-around">
+                <div>
+                    <h1>Precios de Combustibles</h1>
+                    <h2>Precios actualizados correspondientes a la <br> Semana del 11 al 17 de Noviembre del 2023</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-group mt-4">
+
+
+            <div class="card">
+                <div class="card-header bold">
+                    Precios
+                </div>
+
+                <div class="card-body">
+                    <div class="center-content bottom-border">
+                       
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th id="AFPMensual">RD$ 293.10</th>
+                                    <th id="SFSMensual">RD$ 221.60</th>
+                                </tr>
+
+                                <tr>
+                                    <td class="small">Gasolina Premium</td>
+                                    <td class="small">Gasolina Regular</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <hr>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th id="ISRMensual">RD$ 239.10</th>
+                                    <th id="Deducciones">RD$ 221.60</th>
+                                </tr>
+                                <tr>
+                                    <td class="small">Gasoil Óptimo</td>
+                                    <td class="small">Gasoil Regular</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th id="ISRMensual">RD$ 47.97</th>
+                                    <th id="Deducciones">RD$ 132.60</th>
+                                </tr>
+                                <tr>
+                                    <td class="small">Gas Natural <br>(GNL-GNC)</td>
+                                    <td class="small">Gas Licuado de<br>Petroleó (GLP)</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div id="resultado" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer class="text-center mt-5">
+                <p>By <a href="https://twitter.com/julioalvarezrd" target="_blank">Julio Alvarez</a>. Hecho con
+                    &#x2764;
+                </p>
+            </footer>
+            <script src="app.js"></script>
+
+
+
+</body>
+
+</html>
